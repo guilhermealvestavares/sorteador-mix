@@ -1,0 +1,32 @@
+
+body{
+    background-image:url('https://web.whatsapp.com/eb8c22d7-a13f-4f91-a8f7-774c4aea9627');
+   }
+   
+   .input{
+     height:400px;
+   }
+   
+   .btn{
+     width:100%;
+     background-color:#fc0;
+     margin-bottom:32px;
+   }
+   
+   .time1{
+     width:300px;
+     height:200px;
+     border:dotted 1px #fc0;
+     margin-right:32px;
+   }
+   
+   .time2{
+     width:300px;
+     height:200px;
+     border:dotted 1px red;
+   }
+   
+   .flex{
+     display: flex;
+     justify-content:center;
+   }

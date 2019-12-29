@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./src/css/style.css">
+<script src="./src/js/index.js"></script>
+<div class="container">
+  <textarea class="form-control input" type="text" row="10"></textarea> 
+  <div class="btn btn-primary">Sortear times</div>
+  <div class="listaJogadores"></div>
+  <div class="flex">
+    <div class="time1"></div>
+    <div class="time2"></div>
+  </div>
+</div>
+
+<script>
+let players = [];
+const input = document.querySelector('.input');
+const cta = document.querySelector('.btn');
+const lista = document.querySelector('.listaJogadores');
+const time1 = document.querySelector('.time1');
+const time2 = document.querySelector('.time2');
+let randomicoTime1, randomicoTime2;
+cta.addEventListener("click", () => {
+  if(input.value){
+   let jogadores = input.value.split(";");
+   lista.innerHTML = jogadores;
+   let arrayTime1 = [];
+   let arrayTime2 = [];
+   for(var i=0; i<=4; i++){
+      randomicoTime1 = Math.floor(Math.random() * jogadores.length)
+      randomicoTime2 = Math.floor(Math.random() * jogadores.length)
+      arrayTime1.unshift(jogadores[randomicoTime1]);
+      arrayTime2.unshift(jogadores[randomicoTime2]);
+      time1.innerHTML = arrayTime1;
+      time2.innerHTML = arrayTime2;
+   }
+   } else{
+    alert('digite algo');
+   }
+});
+</script>
