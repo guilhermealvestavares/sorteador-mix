@@ -1,32 +1,52 @@
 
 body{
-    background-image:url('https://web.whatsapp.com/eb8c22d7-a13f-4f91-a8f7-774c4aea9627');
+    margin:32px;
    }
    
    .input{
-     height:400px;
+     margin-top:32px;
+     height:300px !important;
    }
    
    .btn{
      width:100%;
-     background-color:#fc0;
      margin-bottom:32px;
    }
    
+   .title{
+    border-bottom: 2px solid blue ;
+    padding-bottom:10px;
+    font-weight: bold;
+   }
+
    .time1{
+     padding-top:32px;
+     text-align: center;
      width:300px;
-     height:200px;
-     border:dotted 1px #fc0;
      margin-right:32px;
+     margin-bottom:32px;
    }
    
    .time2{
+      padding-top:32px;
+     text-align: center;
      width:300px;
-     height:200px;
-     border:dotted 1px red;
+     margin-right:32px;
+     margin-bottom:32px;
    }
    
    .flex{
      display: flex;
      justify-content:center;
    }
+
+   .card{
+     padding-top:32px;
+     margin-right:32px;
+   }
+
+   @media only screen and (max-width: 1366px) {
+    .input{
+      height:150px !important;
+    }
+  }
